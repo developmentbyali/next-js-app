@@ -1,12 +1,16 @@
-import Home from "./home";
-import React from "react";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import Link from "next/link";
+import Faq from "./components/Faq";
 
-const index = () => {
+const inter = Inter({ subsets: ["latin"] });
+
+export default function Home() {
   return (
-    <div>
-      <Home />
-    </div>
+    <main>
+      <h1>Hello</h1>
+      <Link href="/about/user">go to user</Link>
+      <Faq />
+    </main>
   );
-};
-
-export default index;
+}

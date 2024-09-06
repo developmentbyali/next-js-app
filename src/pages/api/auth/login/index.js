@@ -1,8 +1,7 @@
-import bcrypt from "bcrypt";
-import usersModel from "@/models/users";
-import dbConnect from "@/config/dbConnect";
-import { GenAccessToken } from "@/helpers/jwt";
 import { serialize } from "cookie";
+import dbConnect from "../../../../../config/dbConnect";
+import usersModel from "../../../../../models/users";
+import { GenAccessToken } from "../../../../../helpers/jwt";
 
 export default async function handler(req, res) {
   dbConnect();

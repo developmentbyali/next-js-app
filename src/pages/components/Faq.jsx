@@ -6,7 +6,7 @@ const Faq = () => {
 
   return (
     <div className="p-8">
-      <h1>Faq's</h1>
+      <h1>Faqs</h1>
 
       {/* Use Cases of UseState -------------- */}
       {/* case: 01 */}

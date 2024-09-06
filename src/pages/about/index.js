@@ -25,7 +25,7 @@ const Index = () => {
       <h2>hey</h2>
 
       {data?.map((v, i) => {
-        return <h1> {v?.company?.name} </h1>;
+        return <h1 key={i}> {v?.company?.name} </h1>;
       })}
     </div>
   );
